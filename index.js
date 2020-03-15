@@ -11,6 +11,15 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+const titleCased = (input) => {
+  return tutorials.map((tutorial) => {
+    let forCaps = tutorial.split(' ')
+    let capsWord = 
+    forCaps.map( eachWord => eachWord.charAt(0).toUpperCase() + eachWord.slice(1))
+    
+    let newTutorial = capsWord.join(' ')
+    return newTutorial
+  })
 }
+
+// dont understand hoe the est uses input or why console.log stopped working.
